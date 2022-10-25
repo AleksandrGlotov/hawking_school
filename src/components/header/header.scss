@@ -1,0 +1,225 @@
+header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 56px;
+    padding-top: 24px;
+
+    @media (max-width: 1279px) {
+        border-bottom: 1px solid $secondary-grey-light;
+        padding: 24px 0;
+    }
+
+    @media (max-width: 767px) {
+        margin-bottom: 40px;
+        padding: 16px 0;
+    }
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    width: 1785px;
+
+    @media (max-width: 1919px) {
+        width: 1218px;
+    }
+
+    @media (max-width: 1279px) {
+        width: 100%;
+        padding: 0 16px;
+    }
+
+    button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .logo {
+        margin-right: 52px;
+
+        @media (max-width: 1919px) {
+            width: 64px;
+            height: auto;
+        }
+
+        @media (max-width: 767px) {
+            width: 48px;
+            height: auto;
+        }
+    }
+
+    .burger {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 56px;
+        height: 56px;
+        border: 1px solid $secondary-green-light;
+        border-radius: 50%;
+        margin-right: 32px;
+
+        &:hover {
+            background-color: $secondary-green-light;
+
+            svg {
+                color: white;
+            }
+        }
+
+        @media (max-width: 1919px) {
+            order: 2;
+            margin-right: 0;
+            margin-left: 24px;
+        }
+
+        @media (max-width: 767px) {
+            width: 44px;
+            height: 44px;
+        }
+
+        svg {
+            width: 22px;
+            height: 22px;
+            color: $secondary-green-light;
+
+            @media (max-width: 767px) {
+                width: 18px;
+                height: 18px;
+            }
+        }
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        gap: 36px;
+        margin-right: 94px;
+
+        @media (max-width: 1919px) {
+            display: none;
+        }
+
+
+        a {
+          text-transform: uppercase;
+          text-decoration: none;
+          color: $secondary-green-light;
+          font-weight: bold;
+        }
+    }
+
+    .number {
+        text-decoration: none;
+        margin-right: 60px;
+        letter-spacing: 0.08em;
+
+        @media (max-width: 1919px) {
+            display: none;
+        }
+
+        .number_light {
+            color: $secondary-green-light;
+        }
+
+        .number_bold {
+            color: $primary-dark;
+            font-weight: bold;
+        }
+        
+    }
+
+    .call {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $secondary-red;
+        font-size: 14px;
+        font-weight: bold;
+        border-bottom: 1px dashed $secondary-red;
+        margin-right: 70px;
+
+        @media (max-width: 1919px) {
+            display: none;
+        }
+    }
+
+    .social {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        @media (max-width: 1919px) {
+            display: none;
+        }
+
+        .icon-green-light {
+            width: 20px;
+            height: 20px;
+            color: $secondary-green-light;
+        }
+    }
+
+    .header_buttons {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin-left: auto;
+
+        .button_search svg {
+            width: 22px;
+            height: 22px;
+            color: $secondary-green-light;
+        }
+
+        .button_like svg {
+            width: 22px;
+            height: 22px;
+            color: $secondary-rose;
+        }
+
+        .button_cart svg {
+            width: 24px;
+            height: 24px;
+
+            @media (max-width: 767px) {
+                width: 18px;
+                height: 18px;
+            }
+        }
+
+        .button_search, .button_like, .button_cart {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 56px;
+            height: 56px;
+            border: 1px solid $secondary-grey-light;
+            border-radius: 50%;
+
+            &:hover {
+                border: 1px solid $secondary-green-light;
+            }
+        }
+
+        .button_search, .button_like {
+
+            @media (max-width: 767px) {
+                display: none;
+            }
+        }
+
+        .button_cart {
+
+            @media (max-width: 767px) {
+                width: 44px;
+                height: 44px;
+
+                img {
+                    width: 18px;
+                    height: auto;
+                }
+            }
+        }
+    }
+}

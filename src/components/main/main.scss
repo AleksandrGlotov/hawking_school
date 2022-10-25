@@ -1,0 +1,120 @@
+main {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 130px;
+
+    @media (max-width: 1279px) {
+        margin-bottom: 56px;
+    }
+
+    .main__container {
+        width: 1218px;
+        display: flex;
+        position: relative;
+
+        @media (max-width: 1279px) {
+            width: 100%;
+            padding: 0 16px;
+        }
+    }
+
+    h2 {
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 63px;
+
+        @media (max-width: 1279px) {
+            font-size: 30px;
+            line-height: 52px;
+        }
+
+        @media (max-width: 767px) {
+            font-size: 18px;
+            line-height: 37px;
+        }
+    }
+
+    .text-rose {
+        font-weight: 800;
+        font-size: 50px;
+        line-height: 63px;
+        text-transform: uppercase;
+        color: $secondary-rose;
+        margin-bottom: 40px;
+
+        @media (max-width: 1279px) {
+            font-size: 40px;
+            line-height: 52px;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 767px) {
+            font-size: 30px;
+            line-height: 37px;
+        }
+    }
+
+
+    .left-side {
+        width: 50%;
+
+        @media (max-width: 1279px) {
+            width: 100%;
+        }
+
+        ul {
+            padding-left: 54px;
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+
+            @media (max-width: 767px) {
+                padding-left: 42px;
+            }
+
+            li {
+                line-height: 24px;
+                position: relative;     
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 50%;
+                    top: 8px;
+                    left: -24px;
+                    background-color: $secondary-rose;
+                }
+
+                @media (max-width: 767px) {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    svg {
+        width: 766px;
+        height: 574px;
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        right: -160px;
+
+        @media (max-width: 1279px) {
+            display: none;
+        }
+    }
+
+    img {
+        position: absolute;
+        top: -28px;
+        right: -50px;
+
+        @media (max-width: 1279px) {
+            display: none;
+        }
+    }
+}

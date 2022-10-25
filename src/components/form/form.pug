@@ -1,0 +1,22 @@
+.form
+    .form__container
+        h2 необходима консультация?
+        h4 оставьте заявку или свяжитесь с нами в социальных сетях
+        .social
+            svg.icon-orange
+                use(xlink:href="../../assets/images/sprite.svg#vk")
+            svg.icon-orange
+                use(xlink:href="../../assets/images/sprite.svg#telegram")
+            svg.icon-orange
+                use(xlink:href="../../assets/images/sprite.svg#instagram")
+            svg.icon-orange
+                use(xlink:href="../../assets/images/sprite.svg#whatsapp")
+        form(action="submit" method="post")
+            span Для 
+            span.text-orange консультации 
+            span заполните форму!
+            p С Вами свяжутся в ближайшее время
+            .form-line 
+                input(type="text" name="name" placeholder="Ваше имя" required)
+                input(type="tel" name="phone" placeholder="Ваш телефон" required)
+                button(type="submit") отправить

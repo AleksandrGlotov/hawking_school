@@ -1,0 +1,9 @@
+import './header/header';
+import './breadcrumbs/breadcrumbs';
+import './main/main';
+import './steps/steps';
+import './pluses/pluses';
+import './form/form';
+import './video/video';
+import './photos/photos';
+import './footer/footer';

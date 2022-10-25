@@ -1,0 +1,87 @@
+.video {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 150px;
+
+    @media (max-width: 1279px) {
+        margin-bottom: 56px;
+    }
+
+    .video__container {
+        width: 1218px;
+
+        @media (max-width: 1279px) {
+            width: 100%;
+            padding: 0 16px;
+        }
+    }
+
+    .head-with-line {
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 49px;
+        position: relative;
+        margin-bottom: 52px;
+
+        @media (max-width: 1279px) {
+            font-size: 30px;
+            line-height: 37px;
+            margin-bottom: 34px;
+        }
+
+        @media (max-width: 767px) {
+            font-size: 20px;
+            line-height: 30px;
+            margin-bottom: 16px;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: -11px;
+            width: 74px;
+            height: 5px;
+            background-color: $secondary-rose;
+        }
+    }
+
+    p {
+        line-height: 30px;
+        margin-bottom: 50px;
+
+        @media (max-width: 1279px) {
+            margin-bottom: 34px;
+        }
+
+        @media (max-width: 767px) {
+            margin-bottom: 16px;
+            font-size: 14px;
+            line-height: 26px;
+        }
+    }
+
+    .video__pleer {
+        background-image: url("../../assets/images/blobs.png");
+        background-position: top center;
+        background-repeat: no-repeat;
+        text-align: center;
+
+        @media (max-width: 1279px) {
+            background: none;
+        }
+        
+        video {
+            position: relative;
+            width: 771px;
+            height: 438px;
+            top: 50px;
+
+            @media (max-width: 1279px) {
+                width: 100%;
+                height: auto;
+                top: 0;
+            }
+        }
+    }
+}
+    

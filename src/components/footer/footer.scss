@@ -1,0 +1,119 @@
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: $footer-color;
+
+    .footer__container {
+        display: flex;
+        width: 1218px;
+        gap: 100px;
+        padding: 90px 0;
+        color: $primary-light;
+
+        @media (max-width: 1279px) {
+            padding: 24px 16px;
+            justify-content: center;
+        }
+
+        .footer__column {
+            width: calc((100% - 200px) / 3);
+
+            &:not(:last-child) {
+                @media (max-width: 1279px) {
+                    display: none;
+                }
+            }
+
+            h3 {
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: 22px;
+                line-height: 27px;
+                margin-bottom: 18px;
+
+                @media (max-width: 1279px) {
+                    display: none;
+                }
+            }
+
+            .two_column {
+                display: grid;
+                grid-auto-flow: column;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(4, 1fr);
+                column-gap: 30px;
+                row-gap: 18px;
+
+                
+            }
+
+            li {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
+                list-style-type: none;
+
+                a {
+                    text-decoration: none;
+                    color: $primary-light;
+                }
+            }
+
+            .one_column {
+                display: grid;
+                grid-auto-flow: column;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(3, 1fr);
+                row-gap: 18px;
+
+                @media (max-width: 1279px) {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 36px;
+                }
+            }
+
+            .string {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+
+                @media (max-width: 1279px) {
+                    display: none;
+                }
+
+                svg {
+                    width: 15px;
+                    height: 15px;
+                }
+
+                .text-green {
+                    color: $secondary-green-light;
+
+                    span {
+                        color: $primary-light;
+                        margin-left: 4px;
+                    }
+                }
+            }
+
+
+            .social {
+                display: flex;
+                align-items: center;
+                gap: 36px;
+
+                @media (max-width: 1279px) {
+                    display: flex;
+                }
+            }
+
+            .icon-green-light {
+                width: 20px;
+                height: 20px;
+                color: $secondary-green-light;
+            }
+        }
+    }
+}

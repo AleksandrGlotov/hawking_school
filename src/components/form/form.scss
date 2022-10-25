@@ -1,0 +1,182 @@
+.form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+
+    @media (max-width: 1279px) {
+        margin-bottom: 56px;
+    }
+
+    .form__container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 1218px;
+        text-align: center;
+
+        @media (max-width: 1279px) {
+            width: 100%;
+            padding: 0 16px;
+        }
+
+        h2 {
+            font-weight: 800;
+            font-size: 50px;
+            line-height: 40px;
+            text-transform: uppercase;
+
+            @media (max-width: 1279px) {
+                font-size: 40px;
+                line-height: 30px;
+            }
+
+            @media (max-width: 767px) {
+                font-size: 22px;
+                line-height: 30px
+            }
+        }
+
+        h4 {
+            font-weight: 300;
+            font-size: 22px;
+            line-height: 40px;
+            margin-bottom: 36px;
+
+            @media (max-width: 1279px) {
+                font-size: 16px;
+                line-height: 30px;
+                margin-bottom: 32px;
+            }
+
+            @media (max-width: 767px) {
+                font-size: 14px;
+                line-height: 26px;
+                margin-bottom: 24px;
+            }
+        }
+    }
+
+    .social {
+        display: flex;
+        align-items: center;
+        gap: 36px;
+        margin-bottom: 36px;
+
+        @media (max-width: 1279px) {
+            margin-bottom: 32px;
+        }
+
+        @media (max-width: 767px) {
+            width: 100%;
+            justify-content: center;
+            margin-bottom: 24px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid $secondary-grey-light;
+        }
+    }
+
+    .icon-orange {
+        width: 20px;
+        height: 20px;
+        color: $secondary-orange;
+    }
+
+    form {
+        padding: 56px;
+        box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.15);
+        text-align: left;
+
+        @media (max-width: 1279px) {
+           width: 100%;
+           text-align: center;
+        }
+
+        @media (max-width: 767px) {
+            box-shadow: none;
+            padding: 0;
+        }
+
+        span {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 22px;
+
+            @media (max-width: 767px) {
+                font-size: 18px;
+                line-height: 26px;
+            } 
+        }
+
+        .text-orange {
+            font-weight: 700;
+            color: $secondary-orange;
+        }
+
+        p {
+            display: block;
+            font-size: 16px;
+            line-height: 30px;
+            margin: 12px 0 24px;
+
+            @media (max-width: 767px) {
+                font-size: 14px;
+                line-height: 25px;
+            }   
+        }
+    }
+
+    .form-line {
+        display: flex;
+        gap: 16px;
+
+        @media (max-width: 1279px) {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        input {
+            width: 240px;
+            height: 56px;
+            border-radius: 4px;
+            border: 1px solid $secondary-grey-light;
+            font-weight: 500;
+            padding: 17px;
+            outline: none;
+
+            @media (max-width: 1279px) {
+                width: 354px;
+            }
+
+            @media (max-width: 767px) {
+                width: 100%;
+            }
+
+            &[placeholder] {
+                font-size: 14px;
+                line-height: 22px;
+                color: $secondary-grey-dark;
+            }
+
+            &:focus {
+                border: 1px solid $secondary-green-light;
+            }
+        }
+
+        button {
+            width: 240px;
+            height: 56px;
+            border-radius: 4px;
+            font-weight: 700;
+            line-height: 20px;
+            color: $primary-light;
+            background-color: $secondary-green-dark;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+
+            &:focus, &:hover {
+                background-color: $secondary-green-light;
+            }
+        }
+    }
+}
