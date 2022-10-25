@@ -1,0 +1,105 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 50px 150px 150px 100px 100px 100px;
+    margin: 0;
+    grid-template-areas:
+    "header"
+    "menu"
+    "section"
+    "main"
+    "div"
+    "aside"
+    "picture";
+}
+
+@media (min-width: 768px) {
+    body {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 50px 200px 200px 100px 100px;
+        grid-template-areas:
+            "header header header header"
+            "section section section section"
+            "menu main main main "
+            "menu picture picture picture"
+            "menu aside aside div";
+    }
+}
+
+@media (min-width: 1440px) {
+    body {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 50px 300px 100px 100px 100px;
+        grid-template-areas:
+            "header menu menu menu"
+            "section section section section"
+            "main main - div"
+            "main main - aside"
+            "picture picture picture picture";
+    }
+}
+
+header {
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+menu {
+    grid-area: menu;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: red;
+    color: white;
+}
+
+section {
+    grid-area: section;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(60, 107, 177);
+    color: white;
+}
+
+main {
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(14, 30, 53);
+    color: white;
+}
+
+div {
+    grid-area: div;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: aquamarine;
+}
+
+aside {
+    grid-area: aside;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: rgb(57, 168, 131);
+}
+
+picture {
+    grid-area: picture;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: rgb(255, 252, 75);
+}
