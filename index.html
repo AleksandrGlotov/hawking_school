@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX homework</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <div class="forms-line">
+            <form>
+                <p>Введите свое имя пользователя на GitHub</p>
+                <input class="input-name js-input" type="text" name="name" placeholder="Введите свое имя GitHub">
+                <button type="submit" class="load-button js-load"> Загрузить данные </button>
+                <div class="results-container js-results">
+                </div>    
+            </form>
+
+            <form>
+                <p>Введите id пользователя</p>
+                <input class="input-name users-input" type="text" name="name" placeholder="Введите id пользователя">
+                <p class="users-errors"></p>
+                <button type="submit" class="load-button users-load btn-green"> Загрузить данные </button>
+                <div class="results-container users-results">
+            </form>
+        </div>
+    </div>
+
+</body>
+<script src="scripts.js"></script>
+
+</html>
