@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f7f5;
+}
+
+button {
+    width: 240px;
+    height: 48px;
+    background-color: transparent;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.light-theme {
+    background-color: #f2f7f5;
+    color: #16161a;
+    border: 1px solid #16161a; 
+}
+
+.dark-theme {
+    background-color: #16161a;
+    color: #f2f7f5;
+    border: 1px solid #f2f7f5; 
+}
