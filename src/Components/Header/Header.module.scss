@@ -1,0 +1,99 @@
+@import "../../styles/varibles.scss";
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $grey-blue;
+    font-size: 14px;
+}
+
+.header_container {
+}
+
+.header_first {
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1280px;
+}
+
+.header_first_navigation {
+    display: flex;
+    gap: 57px;
+    list-style-type: none;
+}
+
+.header_first_button {
+    display: flex;
+    gap: 40px;
+}
+
+.header_second {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #FFFFFF;
+    box-shadow: 0px 10px 20px 0px #00000014;
+}
+
+.header_second_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    width: 1280px;
+}
+
+.header_second_navigation {
+    display: flex;
+    align-items: center;
+    gap: 57px;
+    list-style-type: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: $dark;
+
+    li {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.header_point1 {
+    margin-right: 5px;
+}
+
+.header_point2 {
+    margin-left: 15px;
+    height: 15px;
+    width: auto;
+
+    & path {
+        fill: $yellow;
+    }
+}
+
+.text_violet {
+    color: $violet;
+    font-weight: 500;
+}
+
+.header_heart {
+    margin-left: 12px;
+}
+
+.link_with_icon {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+}
+
+.header_second_button {
+    display: block;
+    border-radius: 19px;
+    padding: 10px 18px;
+    color: white;
+    background: $violet-gradient;
+}
